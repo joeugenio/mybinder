@@ -42,6 +42,7 @@ p2 = p_norm(n, sd=log_sd)
 print('Laplace pdf with mean {:.2f} and SD {:.2f}'.format(0, log_sd))
 p3 = p_lap(n, sd=log_sd)
 
+plt.figure(figsize=(8,5), dpi= 100)
 plt.plot(n,p1,label='lognormal')
 plt.plot(n,p2,label='gaussiana')
 plt.plot(n,p3,label='laplace')
